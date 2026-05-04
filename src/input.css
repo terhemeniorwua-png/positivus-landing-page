@@ -23,3 +23,6 @@ nav ul li:hover{
     border-bottom: 5px;
     border-color:  rgba(139, 241, 23, 0.727);
 }
+.details::details-content{
+    background-color: rgba(139, 241, 23, 0.727);
+}
