@@ -26,3 +26,8 @@ nav ul li:hover{
 .details::details-content{
     background-color: rgba(139, 241, 23, 0.727);
 }
+input{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
