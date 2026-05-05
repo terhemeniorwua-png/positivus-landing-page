@@ -14,10 +14,10 @@
         <nav class="flex w-full gap-64 bg-white z-10 items-center h-20 shadow fixed top-0 font-semibold px-10">
            <img src="images/head logo.png" alt="">
             <ul class="flex items-center gap-9">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Use Cases</a></li>
-                <li><a href="#">Blog</a></li>
+                <li class="hover:border-b-2 hover:border-green-300"><a href="#">Home</a></li>
+                <li class="hover:border-b-2 hover:border-green-300"><a href="#">Service</a></li>
+                <li class="hover:border-b-2 hover:border-green-300"><a href="#">Use Cases</a></li>
+                <li class="hover:border-b-2 hover:border-green-300"><a href="#">Blog</a></li>
             </ul>
             <button type="button" class="border p-3 px-5 rounded-lg">Request a Quote</button>
         </nav>
@@ -28,7 +28,7 @@
             <div class="w-[40%] leading-8">
                 <h1 class="leading-20 text-6xl">Navigating the digital landscape for success</h1>
                 <p class="pt-5 font-medium">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-                <button type="button" class="border p-3 px-8 mt-2 rounded-lg bg-black text-white">Book a Consultation</button>
+                <button type="button" class="border p-3 px-8 mt-2 rounded-lg hover:bg-gray-800 hover:duration-200 bg-black text-white">Book a Consultation</button>
             </div>
             <img src="images/Illustration.png" alt="">
         </div>
@@ -141,7 +141,37 @@ Digital Marketing Needs</p>
          </div>
        </section>
     </main>
-
+    <footer class="p-10 footerBg mt-10 rounded-tl-3xl rounded-tr-3xl text-white mx-24">
+        <div class="flex px-10 justify-between">
+           <img src="images/footer-logo.png" alt="">
+            <ul class="flex items-center gap-9">
+                <li><a href="#" class="underline">About Us</a></li>
+                <li><a href="#" class="underline">Services</a></li>
+                <li><a href="#" class="underline">Use Cases</a></li>
+                <li><a href="#" class="underline">Blog</a></li>
+            </ul>
+             <div class="flex items-center justify-between gap-5">
+               <div class="bg-white text-black rounded-[10em] flex justify-center items-center"> <i class="fa-brands fa-linkedin-in p-2"></i></div>
+                <i class="fa-brands fa-facebook text-2xl"></i>
+             <di class="bg-white text-black rounded-full flex justify-center items-center"v><i class="fa-brands fa-twitter p-2"></i></div>
+             </div>
+        </div>
+        <div class="flex justify-between items-center">
+            <div class="leading-10 pt-10">
+                 <div class="button rounded-sm bg text-black w-[40%] text-lg text-center">Contact Us:</div>
+                 <p>Email:info@positivus.com</p>
+                 <p>Phone:555 567 8901</p>
+                 <p>Address:1234 Main St</p>
+                 <p>Monostone City,Stardust State 12345</p>
+            </div>
+            <div class="footerInput rounded-3xl flex justify-around gap-5 p-10 py-16">
+                 <input type="email" placeholder="Email" class="border border-amber-50 footerInput">
+                  <div class="button rounded-sm bg text-black w- text-lg text-center p-2 px-10">Subscribe to news</div>
+            </div>
+        </div>
+        <hr class="mt-20">
+        <p class="pt-10">&nbsp;2023 Positivus.All Rights Reserved. <a href="#" class="underline">Privacy Policy</a></p>
+    </footer>
 
   
 </body>
