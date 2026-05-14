@@ -11,15 +11,16 @@
 </head>
 <body>
     <head>
-        <nav class="lg:flex w-full gap-64 bg-white z-10 items-center h-20 shadow-md shadow-gray-400 fixed top-0 font-semibold px-10">
+        <nav class="flex w-full justify-between bg-white z-10 items-center h-20 shadow-md shadow-gray-400 fixed top-0 font-semibold px-10">
            <img src="images/head logo.png" alt="">
-            <ul class="md:flex md:justify-center items-center gap-9">
+            <ul class="flex max-lg:hidden justify-center items-center gap-9">
                 <li class="hover:border-b-2 hover:border-green-300"><a href="#">Home</a></li>
                 <li class="hover:border-b-2 hover:border-green-300"><a href="#">Service</a></li>
                 <li class="hover:border-b-2 hover:border-green-300"><a href="#">Use Cases</a></li>
                 <li class="hover:border-b-2 hover:border-green-300"><a href="#">Blog</a></li>
             </ul>
-            <button type="button" class="border p-3 px-5 rounded-lg md:float-right">Request a Quote</button>
+            <button class="lg:hidden"><i class="fa-solid fa-bars text-3xl "></i></button>
+            <button type="button" class="border p-3 px-5 rounded-lg max-lg:hidden md:float-right">Request a Quote</button>
         </nav>
     </head>
     <main class="mt-16 px-5 md:px-24">
@@ -300,9 +301,10 @@ Meet the skilled and experienced team behind our successful digital marketing st
 
         <!-- contact us -->
         </section>
-       <section class="p-10 bg-gray-100 mt-10 rounded-3xl">
+        <!-- contact us -->
+       <section class="md:p-10 bg-gray-100 mt-10 rounded-3xl">
           <div class="flex items-center lg:w-[70%] gap-3 mb-10 pt-12">
-            <div class="button rounded-2xl bg p-2 px-4 text-2xl">Contact us</div>
+            <div class="max-md:w-full button rounded-2xl bg p-2 md:px-4 text-2xl">Contact us</div>
             <p class="font-semibold text-sm  lg:w-[28%]">Connect with Us: Let's Discuss Your
         Digital Marketing Needs</p>
         </div>
@@ -316,8 +318,8 @@ Meet the skilled and experienced team behind our successful digital marketing st
                </div>
                </div>
             </form>
-         <div class="flex justify-between items-center2 relative">
-               <form action="" class="flex flex-col w-[60%] pt-5">
+         <div class="lg:flex justify-between items-center2 relative">
+               <form action="" class="flex flex-col lg:w-[60%] pt-5">
                 <label for="name">Name</label>
                <input type="text" id="name" placeholder="Name" class="border"><br>
                 <label for="email">Email</label>
@@ -326,22 +328,24 @@ Meet the skilled and experienced team behind our successful digital marketing st
                <textarea name="" class="bg-white border rounded-lg h-[5em] p-2" id="mss" placeholder="Message"></textarea>
                <button class="bg-black text-white p-[10px] mt-5 rounded-lg" type="submit">Submit</button>
             </form>
-            <img src="images/blackstar.webp" alt="" class="h-96 lg:absolute left-[74%]">
+            <img src="images/blackstar.webp" alt="" class="lg:h-96 max-lg:pt-5 lg:absolute lg:left-[74%]">
          </div>
        </section>
     </main>
     <footer class="p-10 footerBg mt-10 rounded-tl-3xl rounded-tr-3xl text-white lg:mx-24 max-lg:space-y-5">
-        <div class="lg:flex px-10 justify-between ">
+        <div class="lg:flex px-10 justify-between max-md:space-y-10">
            <img src="images/footer-logo.png" alt="">
-            <ul class="flex items-center gap-9">
+            <ul class="md:flex items-center gap-9">
                 <li><a href="#" class="underline">About Us</a></li>
                 <li><a href="#" class="underline">Services</a></li>
                 <li><a href="#" class="underline">Use Cases</a></li>
                 <li><a href="#" class="underline">Blog</a></li>
             </ul>
-             <div class="lg:flex items-center justify-between gap-5">
+             <div class="lg:flex items-center justify-between gap-5 max-md:space-y-5">
                <div class="bg-white text-black rounded-[10em] flex justify-center items-center"> <i class="fa-brands fa-linkedin-in p-2 pr-6"></i></div>
-                <i class="fa-brands fa-facebook text-2xl"></i>
+                <div class="bg-white text-black rounded-[10em] flex justify-center items-center">
+                    <i class="fa-brands fa-facebook-f p-2 pr-6"></i>
+                </div>
              <di class="bg-white text-black rounded-full flex justify-center items-center"v><i class="fa-brands fa-twitter p-2 pr-6"></i></div>
              </div>
         </div>
